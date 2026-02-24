@@ -23,7 +23,7 @@ const projects: Project[] = [
     title: "AprendeMais Desktop",
     desc: "Software Educacional, quiz interativos e divertidos.",
     img: "/static/projects/maisdesktop.png",
-    link: "https://react-emoji-search.braydentw.vercel.app/",
+    link: "https://react-emoji-search.F.R.T.vercel.app/",
     tags: ["Java", "JavaFx", "NodeJs", "Api"],
   },
   {

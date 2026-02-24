@@ -1,5 +1,6 @@
-import { certifications, education, experiences, skills } from "@/data/content/experiences";
+import { education, experiences, skills } from "@/data/content/experiences";
 import ExperienceCard from "./ExperienceCard";
+import SkillBar from "./SkillBar";
 
 function Experiences() {
   return (
@@ -40,23 +41,6 @@ function Experiences() {
         </div>
       </section>
 
-      {/* Certifications Section */}
-      <section className="mb-20">
-        <h2 className="text-2xl font-bold text-white mb-10 flex items-center">
-          <span className="w-2 h-8 bg-fun-pink mr-3 rounded"></span>
-          Certificações
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {certifications.map((cert) => (
-            <div key={cert.id} className="bg-fun-gray-darkest rounded-xl p-6 border border-fun-gray-dark hover:border-fun-pink transition-colors">
-              <h3 className="text-lg font-semibold text-white">{cert.title}</h3>
-              <p className="text-fun-pink text-base mt-2">{cert.issuer}</p>
-              <p className="text-fun-gray text-base mt-2">{cert.date}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Skills Section */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-white mb-10 flex items-center">
@@ -66,45 +50,37 @@ function Experiences() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Frontend */}
           <div className="bg-fun-gray-darkest rounded-xl p-8 border border-fun-gray-dark">
-            <h3 className="text-lg font-semibold text-white mb-5">Frontend</h3>
-            <div className="flex flex-wrap gap-3">
+            <h3 className="text-lg font-semibold text-white mb-6">Frontend</h3>
+            <div>
               {skills.frontend.map((skill, index) => (
-                <span key={index} className="px-4 py-2 text-sm bg-fun-pink-dark text-fun-pink rounded-lg">
-                  {skill}
-                </span>
+                <SkillBar key={index} skill={skill} />
               ))}
             </div>
           </div>
           {/* Backend */}
           <div className="bg-fun-gray-darkest rounded-xl p-8 border border-fun-gray-dark">
-            <h3 className="text-lg font-semibold text-white mb-5">Backend</h3>
-            <div className="flex flex-wrap gap-3">
+            <h3 className="text-lg font-semibold text-white mb-6">Backend</h3>
+            <div>
               {skills.backend.map((skill, index) => (
-                <span key={index} className="px-4 py-2 text-sm bg-fun-pink-dark text-fun-pink rounded-lg">
-                  {skill}
-                </span>
+                <SkillBar key={index} skill={skill} />
               ))}
             </div>
           </div>
           {/* Tools */}
           <div className="bg-fun-gray-darkest rounded-xl p-8 border border-fun-gray-dark">
-            <h3 className="text-lg font-semibold text-white mb-5">Ferramentas</h3>
-            <div className="flex flex-wrap gap-3">
+            <h3 className="text-lg font-semibold text-white mb-6">Design</h3>
+            <div>
               {skills.tools.map((skill, index) => (
-                <span key={index} className="px-4 py-2 text-sm bg-fun-pink-dark text-fun-pink rounded-lg">
-                  {skill}
-                </span>
+                <SkillBar key={index} skill={skill} />
               ))}
             </div>
           </div>
           {/* Soft Skills */}
           <div className="bg-fun-gray-darkest rounded-xl p-8 border border-fun-gray-dark">
-            <h3 className="text-lg font-semibold text-white mb-5">Competências Pessoais</h3>
-            <div className="flex flex-wrap gap-3">
+            <h3 className="text-lg font-semibold text-white mb-6">Outros</h3>
+            <div>
               {skills.soft.map((skill, index) => (
-                <span key={index} className="px-4 py-2 text-sm bg-fun-pink-dark text-fun-pink rounded-lg">
-                  {skill}
-                </span>
+                <SkillBar key={index} skill={skill} />
               ))}
             </div>
           </div>

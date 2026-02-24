@@ -1,15 +1,13 @@
-import Footer from "../global/Footer";
 import Head from "next/head";
+import Footer from "../global/Footer";
 import MobileNavbar from "../global/MobileNavbar";
 import Navbar from "../global/Navbar";
-import React, { ReactChildren } from "react";
 
 function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
-  const pageTitle = `${
-    currentPage === "Home"
-      ? "Brayden Wright - Web Developer, Designer, Creator."
-      : `${currentPage} - BraydenTW.io`
-  }`;
+  const pageTitle = `${currentPage === "Home"
+    ? "Francisco Tamele - FullStack Developer"
+    : `${currentPage} - F.R.T`
+    }`;
   console.log(currentPage);
   return (
     <div
@@ -41,21 +39,21 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
         <meta name="description" content={desc} />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://braydentw.io/" />
+        <meta property="og:url" content="https://F.R.T.io/" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={desc} />
         <meta
           property="og:image"
-          content="https://braydentw.io/static/misc/og.png"
+          content="https://F.R.T.io/static/misc/og.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://braydentw.io/" />
+        <meta property="twitter:url" content="https://F.R.T.io/" />
         <meta property="twitter:title" content={pageTitle} />
         <meta property="twitter:description" content={desc} />
         <meta
           property="twitter:image"
-          content="https://braydentw.io/static/misc/og.png"
+          content="https://F.R.T.io/static/misc/og.png"
         ></meta>
         <script
           async

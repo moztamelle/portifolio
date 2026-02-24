@@ -20,7 +20,7 @@ function ExperienceCard({ experience }: { experience: Experience }) {
 
       {/* Date badge */}
       <div className="mb-4">
-        <span className={`inline-block px-4 py-1.5 text-sm rounded-full ${experience.current ? 'bg-fun-pink text-white' : 'bg-fun-gray-dark text-fun-gray-light'}`}>
+        <span className={`inline-block px-4 py-1.5 text-sm rounded-full ${experience.current ? 'bg-fun-pink text-black' : 'bg-fun-gray-dark text-fun-gray-light'}`}>
           {experience.date}
         </span>
       </div>

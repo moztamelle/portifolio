@@ -22,16 +22,6 @@ function Hero() {
             src="/static/doodles/hero/nextjs.svg"
           />
           <img
-            className="sqD bottom-[-300px] -right-1/4 sm:right-[-20%] lg:bottom-[-310px] lg:right-[-120px] w-[400px]"
-            style={{ animationDelay: "0.3s" }}
-            src="/static/doodles/hero/brayden.svg"
-          />
-          <img
-            className="sqD hidden sm:block bottom-[-340px] left-[-180px]"
-            style={{ animationDelay: "0.4s" }}
-            src="/static/doodles/hero/coder.svg"
-          />
-          <img
             className="sqD hidden sm:block left-[100px] lg:left-[160px] bottom-[-150px]"
             style={{ animationDelay: "0.5s" }}
             src="/static/doodles/hero/js.svg"
