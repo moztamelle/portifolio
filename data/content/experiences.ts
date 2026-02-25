@@ -65,7 +65,10 @@ export const experiences: Experience[] = [
       "Google Maps API",
       "PDF Reader",
       "Git",
-      "GitHub"
+      "GitHub",
+      "Gitlabe",
+      "Deploy Playstore",
+      "Deploy VPS"
     ]
   },
   {
