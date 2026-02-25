@@ -46,7 +46,7 @@ const projects: Project[] = [
     title: "Api AcadMoz",
     desc: "API das Aplicações AprendeMais,  NodeJs com express",
     img: "/static/projects/acadmoz-api.png",
-    tags: ["NodeJs", "Yarn", "Express", "Restfull", "Postgres"],
+    tags: ["NodeJs", "Yarn", "Express", "Restfull", "Postgres", "Google Cloud API"],
   },
   {
     id: 6,
